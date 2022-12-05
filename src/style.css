@@ -1,0 +1,361 @@
+
+body{
+  background-color: #e4e4e4;
+}
+
+
+.parent{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  background-color: rgb(201, 201, 255);
+}
+
+.parent > img {
+  margin-left: 20px;
+}
+
+.search{
+  /* border: 1px solid blue; */
+  margin-left: 10px;
+ 
+}
+
+
+.search > input{
+  padding: 10px;
+  width: 400px;
+  border: none;
+  outline: none;
+  background-color: antiquewhite;
+}
+
+
+.search > i {
+  /* color: red; */
+   position: relative;
+   right: 2rem;
+}
+
+
+.login_btn{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+
+}
+
+.right_nav{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+
+.right_nav > .seller {
+  color: red;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+/* categories css start  */
+
+
+.categories{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+
+.imgs{
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+
+}
+
+.imgs > p{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+
+.imgs > p:hover{
+  color: blue;
+}
+
+
+
+/* second slider section start */
+
+.second_parent{
+  /* border: 1px solid red; */
+  display: flex;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.left_slide{
+
+flex: 2;
+/* background-color: red; */
+
+}
+
+.main_slide{
+  flex: 6;
+  /* background-color: blue; */
+
+
+}
+
+.right_slide{
+  flex: 2;
+/* background-color: red; */
+
+
+
+}
+
+.img_btn{
+  width:250px ;
+  height:300px ;
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/464/708/image/d6f827f6b3f87db8.jpg?q=70");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+
+ 
+}
+
+
+.slide_btn{
+ 
+  
+  /* position: relative; */
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(red,orange);
+  border-radius: 150px;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-family: "Poppins";
+  
+}
+
+
+.slide_btn:hover{
+  background-image: linear-gradient(rgb(255, 0, 162),orange);
+}
+
+
+
+/*  */
+
+
+:root {
+  --theme: black;
+}
+
+@media (min-width: 768px) {
+  .image-slider-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+.image-slider-container .image-slider-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+
+.image-slider-container .image-slider-heading h2 {
+  font-size: 17px;
+  color: #c7c7c7;
+}
+
+.image-slider-container .image-slider-heading .swiper-pagination {
+  position: relative;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.image-slider-container .image-slider-heading .swiper-pagination .swiper-pagination-bullet {
+  background-color: #e4e4e4;
+  opacity: 100%;
+  width: 15px;
+  height: 10px;
+  border-radius: 100px;
+  transition: 0.5s;
+  margin: 0px 3px;
+}
+
+.image-slider-container .image-slider-heading .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--theme);
+  width: 30px;
+}
+
+.image-slider-container .swiper {
+  position: relative;
+}
+
+.image-slider-container .swiper .swiper-slide {
+  width: 170px; 
+ 
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con {
+  overflow: hidden;
+  height: 220px;
+  margin: 0px 0px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details {
+  padding: 10px;
+ overflow :hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-info {
+  text-align: left;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-info h2 {
+  font-size: 15px;
+  padding: 5px 0px 5px 0px;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-info span {
+  font-size: 13px;
+  margin-right: 0px;
+  color: #727272;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 5px;
+  font-size: 13px;
+  margin: 0px 3px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns a svg {
+  font-size: 15px;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns a:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .imdb-rate {
+  width: 100%;
+  font-size: 10px;
+  color: #ecc900;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .imdb-rate:hover {
+  background-color: #ecc900;
+  color: black;
+  border: 0;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .like:hover {
+  color: white;
+  background-color: #ff2a00;
+  border: 0;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .show-movie:hover {
+  color: white;
+  background-color: #2a4aff;
+  border: 0;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con:hover .slide-details {
+  display: flex;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con:hover div.movie-info {
+  animation: 30s 1 m;
+}
+
+@keyframes m {
+  from {
+    transform: translateY(-85px);
+  }
+  1% {
+    transform: translateY(60px);
+  }
+  1.5% {
+    transform: translateY(0px);
+  }
+  2% {
+    transform: translateY(20px);
+  }
+  2.5% {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.image-slider-container .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
